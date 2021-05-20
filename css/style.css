@@ -1,0 +1,160 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+
+.container {
+    width: 1170px;
+    margin: auto;
+
+
+}
+
+/*HEADER*/
+header {
+    position: absolute;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    padding-top: 70px;
+}
+
+.nav-item a {
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #D3D3D3;
+
+}
+
+/*HEADER*/
+
+/*HERO*/
+#hero {
+    background: url("../img/bg.png");
+    min-height: 100vh;
+}
+
+.hero-box {
+    display: flex;
+}
+.hero-img {
+    padding-top: 190px;
+    position: relative;
+    width: 602px;
+    height: 602px;
+
+}
+.hero-title {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78px;
+    padding-top: 274px;
+    width: 684px;
+    margin-bottom: 15px;
+}
+.hero-description {
+    font-size: 24px;
+    line-height: 29px;
+    width: 676px;
+    color: #FFE29A;
+    margin-bottom: 70px;
+
+}
+.hero-btn {
+    font-size: 48px;
+    width: 407px;
+    height: 121px;
+    background: linear-gradient(180deg, #FFB80C 14.51%, #EED7A1 100%);
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+.hero-btn:hover {
+    background: transparent;
+    transition: 0.9s;
+    color: #D3D3D3;
+}
+.hero-links {
+    display: flex;
+    align-items: center;
+
+}
+.hero-link {
+    margin-right: 60px;
+
+}
+.hero-link i {
+    color: #866A27
+}
+.hero-img2 {
+    position: absolute;
+    margin-left: 730px;
+}
+
+
+.hover:before, .hover:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.30s;
+    opacity: 0;
+}
+.hover {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.hover-3:before {
+    left: calc(50%);
+    background:  linear-gradient(180deg, #FFB80C 14.51%, #EED7A1 100%);
+}
+.hover-3:after {
+    right: calc(50%);
+    background:  linear-gradient(180deg, #292929 14.51%, #EED7A1 100%);
+}
+
+.nav-item:hover a:before, .nav-item:hover a:after {
+    width: 100%;
+    opacity: 1;
+}
+.nav-item:hover a:after {
+    width: 100%;
+}
+.nav-item:hover a.hover-3:before, .nav-item:hover a.hover-3:after {
+    width: 50%;
+}
+
+
+/*HERO*/
